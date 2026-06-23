@@ -1,0 +1,64 @@
+{
+  "name": "Perakende Satış Teması",
+  "dataColors": [
+    "#1F77B4",
+    "#2CA02C",
+    "#FF7F0E",
+    "#D62728",
+    "#9467BD",
+    "#8C564B",
+    "#E377C2",
+    "#7F7F7F"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#252525",
+  "tableAccent": "#1F77B4",
+  "visualStyles": {
+    "*": {
+      "*": {
+        "fontFamily": [{ "value": "Segoe UI" }],
+        "fontSize": [{ "value": 11 }]
+      }
+    },
+    "card": {
+      "*": {
+        "calloutValue": [{
+          "fontSize": { "value": 28 },
+          "fontBold": { "value": true },
+          "color": { "solid": { "color": "#1F77B4" } }
+        }],
+        "label": [{
+          "fontSize": { "value": 11 },
+          "color": { "solid": { "color": "#7F7F7F" } }
+        }]
+      }
+    },
+    "columnChart": {
+      "*": {
+        "dataPoint": [{
+          "defaultColor": { "solid": { "color": "#1F77B4" } }
+        }],
+        "categoryAxis": [{
+          "gridlineColor": { "solid": { "color": "#E5E5E5" } }
+        }],
+        "valueAxis": [{
+          "gridlineColor": { "solid": { "color": "#E5E5E5" } }
+        }]
+      }
+    },
+    "lineChart": {
+      "*": {
+        "dataPoint": [{
+          "defaultColor": { "solid": { "color": "#1F77B4" } }
+        }]
+      }
+    },
+    "gauge": {
+      "*": {
+        "dataPoint": [{
+          "fill": { "solid": { "color": "#2CA02C" } }
+        }]
+      }
+    }
+  }
+}
