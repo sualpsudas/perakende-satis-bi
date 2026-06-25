@@ -2,6 +2,47 @@
 
 Bu proje, bir perakende şirketinin satış verilerini SQL Server'da modelleyip Power BI ile görselleştiren uçtan uca bir İş Zekâsı (BI) çalışmasıdır. Veritabanı tasarımından raporlamaya kadar her adım belgelenmiştir.
 
+---
+
+## Proje Hakkında
+
+### Veri Seti
+
+Veritabanı ve içindeki örnek veri, **Claude (Anthropic)** yapay zekâ asistanı tarafından oluşturulmuştur. Gerçekçi bir perakende senaryosu kurgulanmış; tablolar, ilişkiler ve binlerce satır örnek kayıt Claude ile birlikte tasarlanmıştır.
+
+Veri seti **2023–2024** dönemini kapsar ve şunları içerir:
+
+- 5 satış bölgesi, 20'den fazla şehir
+- 5 ürün kategorisi (Elektronik, Giyim, Gıda, Ev & Yaşam, Kırtasiye), 50'den fazla ürün
+- 200'den fazla müşteri (Kurumsal, KOBİ, Bireysel segmentleri)
+- Birden fazla bölgede çalışan satış temsilcileri ve yıllık hedefleri
+- Binlerce sipariş ve sipariş detay kaydı
+
+### Sorgular Neyi Görmek İçin Yazıldı?
+
+SQL sorguları ve view'lar dört temel soruya yanıt aramak amacıyla oluşturuldu:
+
+| Analiz Alanı | Hedef |
+|---|---|
+| **Satış Trendi** | Aylık ve yıllık ciro nasıl seyretti? Bir önceki aya göre büyüme var mı? |
+| **Bölgesel Performans** | Hangi bölge ve şehirler en çok ciro üretiyor? Bölgeler arası pay nedir? |
+| **Ürün & Kategori** | Hangi ürünler en çok satıldı, en yüksek kârı getirdi? Kategori bazlı dağılım nedir? |
+| **Temsilci Performansı** | Satış temsilcileri yıllık hedeflerinin ne kadarını gerçekleştirdi? Bölge içi sıralamaları nedir? |
+| **Müşteri Segmentasyonu** | RFM analizi ile hangi müşteriler "Şampiyon", hangileri "Risk Altında" veya "Kaybedilen" segmentinde? |
+
+### Görselleştirmeler
+
+Power BI raporu 6 sayfadan oluşmaktadır. Her sayfa yukarıdaki analiz alanlarından birine karşılık gelir:
+
+- **Genel Özet** — KPI kartları, toplam ciro, kâr ve sipariş sayısı
+- **Satış Trendi** — Aylık ciro çizgi grafiği ve büyüme oranları
+- **Bölgesel Analiz** — Bölge bazlı kart görünümü ve karşılaştırmalı çubuk grafik
+- **Şehirler Detaylı** — Şehir kırılımında tablo ve sıralama
+- **Ürün & Kategori** — En çok satan ürünler, kategori pasta grafiği
+- **Temsilci Performansı** — Hedef gerçekleşme oranları ve bölge içi sıralama
+
+---
+
 ## Kullanılan Teknolojiler
 
 - Microsoft SQL Server 2019+
